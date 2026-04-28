@@ -1,0 +1,26 @@
+name: deploy to EC2
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: checkout code
+              uses: appleboy/checkout@v3
+
+            - name: ssh to EC2
+              uses: appleboy/ssh-action@v0.1.10
+              with:
+                host: ${{ secrets.HOST }}
+                username: ubuntu
+                key: ${{ secrets.SSH_KEY }}
+            
+            - name: deploy
+              script: |
+                cd /var/www/html
+                git clone https://github.com/Archit1704/static.git
