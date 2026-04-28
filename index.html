@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nightwatch Observatory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">
+      <span class="brand-mark"></span>
+      Nightwatch
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#passes">Passes</a>
+      <a href="#tools">Tools</a>
+      <a href="#log">Log</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true">
+        <img src="assets/nightwatch-hero.png" alt="">
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Urban astronomy desk</p>
+        <h1 id="hero-title">Track tonight's sky without leaving the city.</h1>
+        <p class="hero-copy">A simple dashboard concept for planning visible satellite passes, moonlit walks, and quiet observation windows after dark.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#passes">View Tonight</a>
+          <a class="button secondary" href="#tools">Open Tools</a>
+        </div>
+      </div>
+      <aside class="status-panel" aria-label="Tonight snapshot">
+        <div>
+          <span>Visibility</span>
+          <strong>Clear</strong>
+        </div>
+        <div>
+          <span>Moon</span>
+          <strong>38%</strong>
+        </div>
+        <div>
+          <span>Best Window</span>
+          <strong>22:10</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="passes" aria-labelledby="passes-title">
+      <div class="section-heading">
+        <p class="eyebrow">Tonight</p>
+        <h2 id="passes-title">Visible passes</h2>
+      </div>
+      <div class="pass-grid">
+        <article class="pass-card">
+          <span class="pass-time">20:42</span>
+          <h3>ISS northeast arc</h3>
+          <p>Bright, fast pass climbing above the skyline for roughly six minutes.</p>
+        </article>
+        <article class="pass-card">
+          <span class="pass-time">22:10</span>
+          <h3>Jupiter pairing</h3>
+          <p>Good binocular view while the moon sits low and the western sky darkens.</p>
+        </article>
+        <article class="pass-card">
+          <span class="pass-time">23:35</span>
+          <h3>Meteor watch</h3>
+          <p>Best chance for a short session from a rooftop or darker courtyard.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="tools-band" id="tools" aria-labelledby="tools-title">
+      <div class="tools-intro">
+        <p class="eyebrow">Kit</p>
+        <h2 id="tools-title">Field-ready tools</h2>
+        <img src="assets/field-desk.png" alt="Astronomy field desk with notebook, binoculars, star chart, and red flashlight.">
+      </div>
+      <div class="tool-list">
+        <div class="tool-item">
+          <span>01</span>
+          <p>Red-light mode for checking notes without ruining night vision.</p>
+        </div>
+        <div class="tool-item">
+          <span>02</span>
+          <p>Compass bearings for quick alignment between buildings.</p>
+        </div>
+        <div class="tool-item">
+          <span>03</span>
+          <p>Weather and haze checks before committing to a long walk.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section log-section" id="log" aria-labelledby="log-title">
+      <div class="section-heading">
+        <p class="eyebrow">Logbook</p>
+        <h2 id="log-title">Recent notes</h2>
+      </div>
+      <div class="logbook">
+        <p><strong>Tuesday</strong> Thin clouds cleared after 21:30. Saturn visible with steady focus.</p>
+        <p><strong>Sunday</strong> Streetlights made the north view weak, but the zenith stayed usable.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
